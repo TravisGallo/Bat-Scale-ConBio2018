@@ -17,7 +17,7 @@ gallo_et_al_2018_landcover_covariates.RDS - The proportion of tree cover, open v
 
 gallo_et_al_2018_bat_detection_FullData.RDS - The number of days each species (all species detected) was detected and is used to caculate summary statistics about species richness and compare relative activity.
 
-2010_HRLC_North_Central_Merge.tiff - A merged raster of the 2010 High-Resolution Land Cover, NE Illinois and NW Indiana data used to extract landcover data at multiple scales. Origninal files can  be found at https://datahub.cmap.illinois.gov/dataset/high-resolution-land-cover-ne-illinois-and-nw-indiana-2010. Associated file is 2010_HRLC_North_Central_Merge.tif.aux.xml. CRS:26916
+2010_HRLC_North_Central_Merge.tiff - THIS DATA IS NOT LOCATED IN THE REPOSITORY DUE TO SIZE LIMITS. AVALIABLE UPON REQUEST. A merged raster of the 2010 High-Resolution Land Cover, NE Illinois and NW Indiana data used to extract landcover data at multiple scales. Origninal files can  be found at https://datahub.cmap.illinois.gov/dataset/high-resolution-land-cover-ne-illinois-and-nw-indiana-2010. Associated file is 2010_HRLC_North_Central_Merge.tif.aux.xml. CRS:26916
 
 gallo_et_al_2018_grid_100m_reduced.shp (and associated files) - Grid of spatial points spaced 100m apart placed across the greater study region. These points were used to extract landcover data and predict bat activity across the greater Chicago metropolitan area. CRS:26916
 
