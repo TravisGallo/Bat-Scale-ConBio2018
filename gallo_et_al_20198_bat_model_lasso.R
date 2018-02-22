@@ -1,6 +1,6 @@
 model {
   # process model of occupancy status
-  # we just have a random year/session effect here
+  # random effect on year/session
   for(i in 1:n){
     z[i] ~ dbern(psi[i])
     logit(psi[i]) <- beta_0[yrs[i]] 
@@ -32,7 +32,6 @@ model {
   # scaling parameter for double exponential priors
   # smaller mean more mass at zero
   lambda ~ dgamma(1,1)
-  ####################################
   
   # observation model
 

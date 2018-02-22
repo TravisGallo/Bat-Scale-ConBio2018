@@ -4,12 +4,9 @@ model {
   for(i in 1:n){
     z[i] ~ dbern(psi)
   }
-psi ~ dbeta(1,1)
-  ####################################
-  
-  # observation model
-
+  psi ~ dbeta(1,1)
   detect_prob ~ dbeta(1,1)
+  
   # observation model
   for(i in 1:n){
     y[i] ~ dbin(z[i] * detect_prob, jmat[i])

@@ -1,6 +1,6 @@
 model {
   # process model of occupancy status
-  # we just have a random year/session effect here
+  # random effect on year/session
   for(i in 1:n){
     z[i] ~ dbern(psi[i])
     logit(psi[i]) <- beta_0[yrs[i]] 
@@ -26,14 +26,12 @@ model {
   # create beta parameters for covariates
   for(i in 1:ncov){
     laplace[i] ~ ddexp(0, lambda) # lasso regression
-    #pi[i] ~ dbern(pp) # indicator variable
     beta[i] <- laplace[i] * pi[i] # mixture of priors
   }
   pp~dbeta(4,8)
   # scaling parameter for double exponential priors
   # smaller mean more mass at zero
   lambda ~ dgamma(1,1)
-  ####################################
   
   # observation model
 
