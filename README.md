@@ -30,3 +30,11 @@
 **lake_michigan_shoreline.shp (and associated files)** - Spatial polygon of Lake Michigan to plot with predictive raster data. CRS:26916
 
 **Note:** All of these files must be within your working directory for the analysis to work.  Our analysis was done in parallel and used all but two of the cores in a computer. Therefore, if you have two or less cores on your computer you will need to adjust the settings annotated within gallo_et_al_2018_bat_landscape_analysis.R.
+
+# **Raster Layers of Predicted Bat Activity:**
+
+**BigBrownBat_Predicted_Activity_Chicago.tif** – Spatial GeoTiff that can be loaded in ArcGIS or QGIS. Data contains predicted activity of big brown bat across the Chicago metropolotian area. CRS: 26916
+
+**EasternRedBat_Predicted_Activity_Chicago.tif** – Spatial GeoTiff that can be loaded in ArcGIS or QGIS. Data contains predicted activity of eastern red bat across the Chicago metropolotian area. CRS: 26916
+
+**TwoSpeciesCombined_Predicted_Activity_Chicago.tif** – Spatial GeoTiff that can be loaded in ArcGIS or QGIS. Data contains predicted activity of both big brown bat and eastern red bat across the Chicago metropolotian area and during the same period of time. CRS: 26916
